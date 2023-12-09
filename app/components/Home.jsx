@@ -1,10 +1,7 @@
-'use client'
 // HalamanUtama.jsx
 import React, { useState, useEffect } from 'react';
-import './components/style.css';
-import bg1 from './assets/images/bg1.png'
-import Image from 'next/image'
-
+import './style.css';
+import bg1 from '../assets/images/bg1.png'
 
 const Home = () => {
   const [width, setWidth] = useState('0%'); // Set initial width to 0%
@@ -68,7 +65,7 @@ const Home = () => {
           </div>
           <div className='avatar1'>
             <div class="flex items-center gap-4">
-                <Image class="w-10 h-10 rounded-full" src={bg1} alt=""/>
+                <img class="w-10 h-10 rounded-full" src={bg1} alt=""/>
                 <div class="font-medium dark:text-black">
                     <div>Our Team's</div>
                     <div class="text-sm text-gray-500 dark:text-gray-400">Arya, Felix, Niko</div>
